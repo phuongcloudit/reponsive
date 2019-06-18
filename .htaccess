@@ -1,0 +1,16 @@
+ErrorDocument 404 /index.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# + www [www‚ ‚è‚É“ˆê‚·‚éê‡]
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteCond %{HTTP_HOST} ^(.*)$
+RewriteCond %{HTTP_HOST} !^ssl\.
+RewriteRule ^(.*)$       http://www.%1/$1 [R=301,L]
+
+# index.html -> / [URL––”ö‚ğƒXƒ‰ƒbƒVƒ…‚Å“ˆê]
+RewriteCond %{REQUEST_URI} ^/index\.html
+RewriteRule ^index\.html(.*)$ /$1        [R=301,L]
+
+</IfModule>
