@@ -108,7 +108,7 @@
 			position: fixed;
 			right: 10px;
 			z-index: 100000;
-			top: 24px;
+			/* top: 24px; */
 		}
 
 		#index .w638px {
@@ -189,7 +189,7 @@
 			width: 100%;
 			left: 0;
 			display: none;
-			top: 73px;
+			top: 60px;
 			height: calc(100vh - 90px);
 			z-index: 9999999999;
 		}
@@ -315,7 +315,7 @@
 		}
 
 		#header {
-			height: 76px;
+			/* height: 76px; */
 			width: 100%;
 			top: 0;
 			position: fixed;
@@ -356,6 +356,9 @@
 		}
 
 		.gmap_wrap01 {
+			/* width: 100% !important;
+   			height: auto !important; 
+			margin-top: 15px; */
 			display: none !important;
 		}
 		
@@ -374,6 +377,7 @@
 		}
 
 		#footer .inner .in02 {
+			width: 100% !important;
 			margin-top: 20px;
 			margin-left: 0px !important;
 		}
@@ -387,47 +391,134 @@
 			font-size: 12px;
 			text-align: center;
 		}
+		/* #footer .inner .in03 p{
+			padding-bottom: 50px;
+		} */
+		/* #footer{
+			height: auto !important;
+			/* padding: 10px; */
+			padding-top: 10px;
+			background: none !important;
+			border-top: 2px solid #729700 !important;
+		} */
 
-		/* fixfooter */
-
+		/*fix footer*/
 		#fixfooter {
 			position: fixed;
 			bottom: 0;
-			left: 0;
+			left: 5px;
+			width: calc(100% - 10px);
+			z-index: 9;
+			height: 60px;
+			background: #D9EAF4;
+			display:none;
 			width: 100%;
-			z-index: 999;
-			height: 65px;
-			background: rgba(255, 255, 255, 0.8);
-			display: none;
+			left: 0;
 		}
 
 		#fixfooter ul {
 			display: block;
-			width: 300px;
-			margin: 10px auto;
+			width: 100%;
+			margin: 6px auto;
+			/* margin-left: 1px; */
 			overflow: hidden;
+			height: 48px;
+			list-style: none;
+			max-width: 410px;
+			padding: 0 10px;
 		}
 
 		#fixfooter li {
 			float: left;
 			text-align: center;
-			width: 145px;
+			width: calc(50% - 5px);
+			list-style: none;
+			margin: 0 auto;
+			height: 48px;
+			padding: 0 5px;
+			background: #308BC0;
+			color: #fff;
 		}
-
+		#fixfooter li {
+			border: 1px solid #fff;
+			position: relative;
+		}
 		#fixfooter li:first-child {
-			margin-right: 10px;
+			background: #dc9c2b;
+			margin-right: 5px;
 		}
-
-		#fixfooter li a {
-			display: table-cell;
-			vertical-align: middle;
+		#fixfooter li:first-child a {
+			padding-left: calc(50% - 35px);
+		}
+		#fixfooter li:first-child a:after {
+			background: url(../images/mail_sp2.png) 5px center no-repeat;
+			width: 30px;
+			height: 25px;
+			content: "";
+			z-index: 1;
+			top: 9px;
+			left: calc(50% - 68px);
+			position: absolute;
+		}
+		#fixfooter li:last-child {
+			background: #dc9c2b;
+			margin-left: 5px;
+			/* display: none; */
+		}
+		#fixfooter li:last-child a {
+			padding-left: calc(50% - 42px);
+			background-size: 25px;
 			color: #fff;
 			text-decoration: none;
 		}
+		#fixfooter li:last-child a:after {
+			background: url(../images/telicon.png) 5px center no-repeat;
+			background-size: 16px;
+			width: 22px;
+			height: 24px;
+			content: "";
+			z-index: 1;
+			top: 11px;
+			margin-left: 15px;
+			left: calc(50% - 74px);
+			position: absolute;
 
-		/* end fixfooter */
+		}
+		#fixfooter li a {
+			display: block;
+			vertical-align: middle;
+			color: #fff;
+			text-decoration: none;
+			/* width: 100%; */
+			/* padding: 2px; */
+			height: 46px;
+			overflow: hidden;
+			box-sizing: border-box;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			/* background: #FFE800; */
+			font-size: 14px;
+			font-weight: bold;
+			/* border: 1px solid #333; */
+		}
+		#fixfooter img{
+			height: 100%;
+			width: 100%;
+			max-width: 164px;
+		}
+		span.hd_ancho {
+			height: 100px;
+			display: block;
+			margin-top: -100px;
+		}
+		/*end fix footer*/
 		#wrap {
-			background: url(../images/top_bg01.png) no-repeat center !important;
+			background: url(../images/bg-top.jpg) no-repeat !important;
+    		background-size: contain !important;
+    		/* position: relative; */
+    		/* margin-top: -354px; */
+  			height: auto;
 		}
 
 		#wrapper {
@@ -441,10 +532,7 @@
 		/* #content .box .inner {
 			margin-left: 15px;
 		} */
-		#content p {
-			font-size: 13px;
-		}
-
+		
 		.top_h2 {
 			margin: 0 !important;
 		}
@@ -489,7 +577,7 @@
 
 		/* ---feature--- */
 		.box .inner h2 {
-			margin-top: 76px;
+			margin-top: 60px;
 			background-size: cover;
 			padding-top: 50px !important;
 		}
@@ -572,6 +660,7 @@
 
 		#content p {
 			width: 100%;
+			font-size: 16px;
 		}
 
 		#mid {
@@ -636,5 +725,8 @@
 			background: #e89112;
 			padding: 10px;
 			text-align: center;
+		}
+		.summary {
+			display: none;
 		}
 	}
