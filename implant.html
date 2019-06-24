@@ -39,30 +39,6 @@
 
 </script>
 <!-- Google Analytics end -->
-
-<!-- SmartChange start -->
-<script type="text/javascript">
-/**
- * Smart Change Distribution 
- * please place this code below the tag of Google Analytics.
- * このタグをGAタグより下に設置してください。
- */
-!function(){
-	var ACCOUNT = 'shirayama-dc',
-		DOMAIN  = 'shirayama-dc.com',
-		MOBILE  = /(?:iPhone|iPod|Android.*Mobile|IEMobile)/i,
-		h = (document.referrer || '').match(/^http[s]?\:\/\/([^\/]+)\//i) ? RegExp.$1 : '';
-	
-	if( ( !h || ( !h.match(ACCOUNT) && !h.match(DOMAIN) ) ) && MOBILE.exec( navigator.userAgent ) ) {
-		if(confirm("このサイトにはスマートフォン用のサイトがあります。\n表示しますか？")){
-			var dest = location.protocol + '//' + ACCOUNT + '.smart-change.info' + 
-						location.pathname + (location.search||'') + (location.hash||'');
-				location.href = dest;
-		}
-	}
-}()
-</script>
-<!-- SmartChange end -->
 </head>
 
 <body id="mid">

@@ -35,6 +35,10 @@
 	.page-top {
 		display: none;
 	}
+	#totop a{
+		display: none;
+	}
+	
 
 	@media screen and (max-width: 768px) {
 		* {
@@ -338,6 +342,9 @@
 			display: flex !important;
 			justify-content: center;
 		}
+		.top_inn01 .in02 .common_btn {
+			display: none !important;
+		}
 
 		.index_banner {
 			flex-direction: column;
@@ -348,22 +355,23 @@
 		}
 
 		#top_sec04 {
+			background: url(../images/top_bg02_mobi.png) no-repeat left center !important;
 			width: 100% !important;
+			background-position: 
 		}
 
 		.top_in04 {
-			padding: 50px 0 0 15px !important;
+			padding: 50px 0 0 0 !important;
 		}
 
 		.gmap_wrap01 {
-			/* width: 100% !important;
+			width: 100% !important;
    			height: auto !important; 
-			margin-top: 15px; */
-			display: none !important;
+			margin-top: 15px;
 		}
 		
-		.foot_ico {
-			display: none !important;
+		#wrapper {
+			margin-bottom: 65px !important;
 		}
 		.top_sec03{
 			display: none !important;
@@ -374,6 +382,7 @@
 			flex-direction: column;
 			align-items: center;
 			padding: 10px;
+			height: auto !important;
 		}
 
 		#footer .inner .in02 {
@@ -383,24 +392,24 @@
 		}
 
 		#footer .inner .in03 {
-			padding: 53px 0;
 			width: 100% !important;
-			width: 100%;
-			line-height: 19px;
 			color: #fff;
 			font-size: 12px;
-			text-align: center;
+			background-color: #729700;
 		}
 		/* #footer .inner .in03 p{
 			padding-bottom: 50px;
 		} */
-		/* #footer{
+		#footer{
 			height: auto !important;
 			/* padding: 10px; */
-			padding-top: 10px;
+			/* padding-top: 10px;*/
 			background: none !important;
-			border-top: 2px solid #729700 !important;
-		} */
+			border-top: 1px solid #729700 !important; 
+		}
+		.pagetop{
+			display: none;
+		}
 
 		/*fix footer*/
 		#fixfooter {
@@ -513,17 +522,13 @@
 			margin-top: -100px;
 		}
 		/*end fix footer*/
-		#wrap {
+		/* #wrap {
 			background: url(../images/bg-top.jpg) no-repeat !important;
     		background-size: contain !important;
-    		/* position: relative; */
-    		/* margin-top: -354px; */
+    		position: relative;
+    		margin-top: -354px !important;
   			height: auto;
-		}
-
-		#wrapper {
-			margin-bottom: 65px !important;
-		}
+		} */
 
 		.footlogo {
 			margin-bottom: 10px !important;
@@ -580,6 +585,7 @@
 			margin-top: 60px;
 			background-size: cover;
 			padding-top: 50px !important;
+			font-size: 140% !important;
 		}
 
 		.pan_list {
@@ -660,7 +666,7 @@
 
 		#content p {
 			width: 100%;
-			font-size: 16px;
+			font-size: 14px;
 		}
 
 		#mid {
@@ -714,9 +720,17 @@
 		}
 
 		.merit_wrap01 {
-			width: 100%;
-			background-image: none;
-			background-color: #e2e2e2;
+			width: 100% !important;
+			background-image: none !important;
+			background-color: #e2e2e2 !important;
+		}
+		.merit_wrap01 dl{
+			width: 100% !important;
+			margin-left: 0 !important
+		}
+		.merit_wrap01 dt{
+			padding: 10px !important;
+			height: auto !important;
 		}
 
 		#content .com_tit01 {
@@ -728,5 +742,48 @@
 		}
 		.summary {
 			display: none;
+		}
+		#toTop{
+			border: none;
+			bottom: 82px;
+			cursor: pointer;
+			height: 50px;
+			margin: 0;
+			right: 6px;
+			overflow: hidden;
+			position: fixed;
+			text-decoration: none;
+			width: 50px !important;
+			z-index: 100;
+		}
+		#top_sec04 .inner{
+			background: none !important;
+		}
+		
+		.step_wrap02{
+			width: 100% !important;
+			padding: 15px 15px 45px !important;
+			background-size: cover !important;
+			display: flex !important;
+  			flex-wrap: wrap;
+		}
+		.step_wrap01 .step_bg{
+			width: 100% !important;
+			height: auto !important;
+		}
+		.step_wrap03{
+			width: 100% !important;
+			padding: 15px !important;
+			background-size: cover !important;
+			display: flex !important;
+  			flex-wrap: wrap;
+		}
+		.step_wrap01{
+			background: none !important;
+			border-top: 1px solid #b6d762;
+			padding-top: 0 !important;
+		}
+		.perio_img01{
+			position: inherit;
 		}
 	}
