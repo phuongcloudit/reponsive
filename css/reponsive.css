@@ -398,6 +398,8 @@
 			color: #fff;
 			font-size: 12px;
 			background-color: #729700;
+			line-height: 1 !important;
+			padding: 15px 0;;
 		}
 
 		/* #footer .inner .in03 p{
@@ -562,12 +564,12 @@
 			width: 100% !important;
 			height: auto !important;
 			/* position: relative; */
-			padding-top: 88px !important;
+			padding-top: 115px !important;
 			/* top: 105px; */
 			padding-bottom: 22px;
 			float: none !important;
 			display: block;
-			margin-bottom: 35px !important;
+			/* margin-bottom: 35px !important; */
 		}
 
 		.box .inner {
@@ -583,8 +585,12 @@
 
 		.top_sec02 .top_btn02 {
 			display: flex;
+			margin-bottom: 0 !important;
 		}
 
+		.new-bnr-top{
+			margin: 0 2px;
+		}
 
 
 		.top_sec02 .common_btn li:last-child {
@@ -681,6 +687,7 @@
 
 		#content>h3 {
 			font-size: 120% !important;
+			line-height: 1.5 !important;
 		}
 
 		.clinic_wrap01 {
@@ -857,5 +864,12 @@
 			text-decoration: none;
 			width: 50px !important;
 			z-index: 100;
+		}
+		.howto_contact{
+			flex-wrap: wrap;
+			line-height: 1.5 !important;
+		}
+		#content>h4 {
+			font-size: 124% !important;
 		}
 	}
